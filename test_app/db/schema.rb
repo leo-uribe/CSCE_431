@@ -16,6 +16,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_19_153234) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
+    t.string "author"
+    t.decimal "price"
+    t.date "published"
+    t.integer "version"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
